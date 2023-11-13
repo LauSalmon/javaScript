@@ -6,7 +6,10 @@ let nombre2 = parseInt(prompt("Saisir le 2 nombre"));
 function multip(a, b){
     if (a<0 && b<0 || a>0 && b>0){
         console.log("Le résultat est positif");
-    } else {
+    } else if (a==0 || b==0) {
+        console.log("Le résultat est égale à 0 !");
+        
+    }else {
         console.log("Le résultat est négatif");
     }
 }
