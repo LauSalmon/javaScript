@@ -1,6 +1,6 @@
 let name = prompt("Saisir le nom de l'article");
-let price = prompt("Saisir leprix de l'article (HT)");
-let qtt = prompt("Saisir la quantité d'article que vous souhaitez");
+let price = parseFloat(prompt("Saisir leprix de l'article (HT)"));
+let qtt = parseInt(prompt("Saisir la quantité d'article que vous souhaitez"));
 
 let array = [name, price, qtt];
 
