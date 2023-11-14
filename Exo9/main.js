@@ -3,6 +3,7 @@ let qtt = parseInt(prompt("Combien de chocolatines sont achetés ?"));
 
 let choco = 0;
 
+//boucle pour définir le prix des choco à l'unité
 for (i=0; i<qtt; i++){
     if (qtt>1 && qtt<=10){
         choco = 1.40;
@@ -13,4 +14,4 @@ for (i=0; i<qtt; i++){
     }
 }
 
-console.log(qtt*choco + "€");
+console.log((qtt*choco).toFixed(2) + "€");
