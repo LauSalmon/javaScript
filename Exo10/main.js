@@ -1,11 +1,10 @@
 
-let mysteryNumber = chooseNumber(1,100);
-let numberOfTries = 1;
-
 function chooseNumber(min,max){
     return Math.floor(Math.random()*(max-min+1)+min);
 }
+let mysteryNumber = chooseNumber(1,100);
 
+let numberOfTries = 1;
 
 function play() {
     let gameNotFinished = true;
