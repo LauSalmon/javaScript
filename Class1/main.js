@@ -33,6 +33,11 @@ const chat = new Animal ("Chat", 4, 30, 4);
 const chien = new Animal ("Chien", 4, 50,9);
 const coq = new Animal ("Coq", 2, 40,3);
 
+console.log(tigre);
+console.log(chat);
+console.log(chien);
+console.log(coq);
+
 tigre.crier();
 chat.crier();
 chien.crier();
