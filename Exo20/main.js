@@ -19,15 +19,18 @@ p3.textContent = user.age;
 
 const image = document.querySelector("img");
 image.src = user.image;
-image.style.position = "absolute";
 image.style.width = ("100px");
 image.style.height = ("100px");
 image.style.margin = ("10px");
 
-
+image.align = "right";
+//image.style.position = "absolute";
+//image.style.to = "0";
+//image.style.right = "0";
 
 const bloc = document.querySelector("div");
 bloc.style.backgroundColor = "rgb(220,220,220)";
 bloc.style.color = "blue";
 
 console.log(image);
+console.log(HTMLCollection);
