@@ -15,3 +15,4 @@ for (i=0; i<qtt; i++){
 }
 
 console.log((qtt*choco).toFixed(2) + "€");
+
