@@ -29,6 +29,7 @@ bouton.addEventListener("click", function() {
 
                         }else if (response.status == 404) {
                             temps.textContent = ("Erreur veuillez écrire un nom de ville valide");
+                            temperatue.textContent = "";
                         }
                     });
 
