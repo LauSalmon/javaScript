@@ -11,7 +11,7 @@ const apiMeteo = fetch(url)
                         let lat = json.coord.lat;
                         let lon = json.coord.lon;
                         let name = json.name;
-                        let icon = json.weather.icon;
+                        //let icon = json.weather.icon;
 
 
                         const main = document.createElement('div');
