@@ -11,33 +11,40 @@ const apiMeteo = fetch(url)
                         let lat = json.coord.lat;
                         let lon = json.coord.lon;
                         let name = json.name;
+                        let icon = json.weather.icon;
 
 
                         const main = document.createElement('div');
                         main.setAttribute("id", "div");
 
-                        let temperature = document.createElement("p");
+                        const temperature = document.createElement("p");
                         temperature.setAttribute("id", "p1");
 
-                        let lattitude = document.createElement("p");
+                        const lattitude = document.createElement("p");
                         temperature.setAttribute("id", "p2");
 
-                        let longitude = document.createElement("p");
+                        const longitude = document.createElement("p");
                         temperature.setAttribute("id", "p3");
 
-                        let nom = document.createElement("p");
+                        const nom = document.createElement("p");
                         temperature.setAttribute("id", "p4");
+
+                        const image = document.createElement("img");
+                        image.setAttribute("id", "img");
+                        image.setAttribute("src", "https://openweathermap.org/img/wn/04d@2x.png");
+                        image.setAttribute("alt", "icon du temps qu'il fait");
 
                         document.body.appendChild(main);
                         main.appendChild (temperature);
                         main.appendChild (lattitude);
                         main.appendChild (longitude);
                         main.appendChild (nom);
+                        main.appendChild (image);
 
                         temperature.textContent = ("La température est de " +temp +"°C");
                         lattitude.textContent = ("La laittitude est : " + lat);
                         longitude.textContent = ("La longitude est : " + lon);
-                        nom.textContent = ("Vous ètes à " + name);
+                        nom.textContent = ("Vous êtes à " + name);
                     });
 
 
